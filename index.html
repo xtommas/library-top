@@ -32,6 +32,35 @@
             
         </div>
     </div>
+
+    <!-- modal window -->
+    <section class="modal hidden">
+        <button class="closeModal">x</button>
+        <form action="">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title" required>
+            </div>
+            <div class="form-group">
+                <label for="author">Author</label>
+                <input type="text" name="author" id="author" required>
+            </div>
+            <div class="form-group">
+                <label for="pages">Number of pages</label>
+                <input type="number" name="pages" id="pages" required>
+            </div>
+            <div class="form-group" id="readModal">
+                <label for="read">Read</label>
+                <label class="switch">
+                    <input type="checkbox" name="read">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <button id="addButton">Add</button>
+        </form>
+    </section>
+    
+    <div class="overlay hidden"></div>
     
 </body>
 </html>

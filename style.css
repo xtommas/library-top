@@ -232,3 +232,133 @@ nav {
 }
 
 /* End of card area */
+
+/* Modal window */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: 1;
+}
+
+.modal {
+    position: fixed;
+    z-index: 2;
+    background-color: var(--secondary);
+    width: 488px;
+    height: 687px;
+    border-radius: 20px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 1fr;
+}
+ 
+.hidden {
+    display: none;
+}
+
+.closeModal {
+    border: none;
+    width: min-content;
+    height: min-content;
+    font-size: 20px;
+    font-weight: 700;
+    background: none;
+    color: white;
+    justify-self: end;
+    align-self: start;
+    cursor: pointer;
+    margin-top: 12px;
+    margin-right: 19px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr) min-content;
+    padding-left: 31px;
+    padding-right: 31px;
+    padding-bottom: 39px;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 12px;
+}
+
+.form-group input[type=text], .form-group input[type=number]{
+    grid-row: 2 / 3;
+    background-color: var(--background);
+    border: none;
+    border-radius: 10px;
+    /* height: 60px; */
+    padding: 18px 20px 18px 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+
+}
+
+.form-group input:focus, .form-group input:active{
+    outline: none;
+    box-shadow: 0 0 0 2px var(--accent);
+}
+
+.form-group label {
+    grid-row: 1 / 2;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    align-self: end;
+}
+
+input[type=number] { 
+    -moz-appearance: textfield;
+    appearance: textfield;
+    margin: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button { 
+      -webkit-appearance: none; 
+      margin: 0; 
+}
+
+#addButton {
+    font-size: 30px;
+    color: var(--background);
+    background-color: var(--accent);
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 180px 10px 180px;
+    justify-self: center;
+    cursor: pointer;
+    align-self: center;
+    width: 425px;
+}
+
+#addButton:hover {
+    color: white;
+}
+
+#readModal {
+    margin-top: 40px;
+}
+   
+
+/* End of modal window */
