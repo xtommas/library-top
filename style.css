@@ -263,7 +263,17 @@ nav {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: min-content 1fr;
+    animation: zoomIn 0.5s;
 }
+
+@keyframes zoomIn {
+    0% {
+      transform:scale(0);
+    }
+    100% {
+      transform:scale(1);
+    }
+  }
  
 .hidden {
     display: none;
