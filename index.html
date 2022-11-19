@@ -17,7 +17,7 @@
         <button id="newButton">+ New</button>
     </nav>
     <div class="container">
-        <div class="card">
+        <!-- <div class="card">
             <button class="deleteButton">x</button>
             <p class="bookTitle">Book Title</p>
             <p class="bookAuthor">By: book author</p>
@@ -28,7 +28,7 @@
                     <input type="checkbox">
                     <span class="slider round"></span>
                 </label>
-            </div>
+            </div> -->
             
         </div>
     </div>
@@ -36,7 +36,7 @@
     <!-- modal window -->
     <section class="modal hidden">
         <button class="closeModal">x</button>
-        <form action="">
+        <form action="" id="newBookForm">
             <div class="form-group">
                 <label for="title">Title</label>
                 <input type="text" name="title" id="title" required>
@@ -52,11 +52,11 @@
             <div class="form-group" id="readModal">
                 <label for="read">Read</label>
                 <label class="switch">
-                    <input type="checkbox" name="read">
+                    <input type="checkbox" class="readCheckbox" name="read">
                     <span class="slider round"></span>
                 </label>
             </div>
-            <button id="addButton">Add</button>
+            <button id="addButton" type="submit">Add</button>
         </form>
     </section>
     
